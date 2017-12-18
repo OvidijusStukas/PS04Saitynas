@@ -1,0 +1,43 @@
+﻿@model ECoinTrackerModels.Requests.LoginRequest
+@{
+	ViewData["Title"] = "Prisijungimas";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-contoller="Account" asp-action="Login" method="POST" class="form-horizontal" role="form">
+
+	<div class="text-center" style="padding-bottom: 30px">
+		<h1>Prisijungimas</h1>
+	</div>
+
+	@if (ViewBag.Error != null && ViewBag.Error)
+	{
+		<div class="text-center" style="padding-bottom: 10px">
+			<h4 style="color: red;">Įvestas vartotojas neegzistuoja arba blogas slaptažodis.</h4>
+		</div>
+	}
+
+	<div class="row" style="padding-bottom: 10px;">
+		<div class="col-md-12 col-xs-12">
+			<div class="input-group">
+				<span class="input-group-addon glyphicon glyphicon-user"></span>
+				<input asp-for="Username" type="text" class="form-control" placeholder="Prisijungimo vardas">
+			</div>
+		</div>
+	</div>
+
+	<div class="row" style="padding-bottom: 10px;">
+		<div class="col-md-12 col-xs-12">
+			<div class="input-group">
+				<span class="input-group-addon glyphicon glyphicon-lock"></span>
+				<input asp-for="Password" type="password" class="form-control" placeholder="Slaptažodis" data-toggle="password">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 col-xs-12">
+			<button type="submit" class="btn btn-success" style="width: 100%;">Prisijungti</button>
+		</div>
+	</div>
+</form>

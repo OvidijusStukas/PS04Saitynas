@@ -1,0 +1,9 @@
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\bin\Debug\netcoreapp2.0\ECoinTrackerModels.deps.json
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\bin\Debug\netcoreapp2.0\ECoinTrackerModels.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\bin\Debug\netcoreapp2.0\ECoinTrackerModels.pdb
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\obj\Debug\netcoreapp2.0\ECoinTrackerModels.csprojResolveAssemblyReference.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\obj\Debug\netcoreapp2.0\ECoinTrackerModels.csproj.CoreCompileInputs.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\obj\Debug\netcoreapp2.0\ECoinTrackerModels.AssemblyInfoInputs.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\obj\Debug\netcoreapp2.0\ECoinTrackerModels.AssemblyInfo.cs
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\obj\Debug\netcoreapp2.0\ECoinTrackerModels.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTrackerModels\obj\Debug\netcoreapp2.0\ECoinTrackerModels.pdb

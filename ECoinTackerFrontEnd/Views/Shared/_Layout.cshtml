@@ -1,0 +1,101 @@
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - E.Coin Tracker</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">E.Coin Tracker</a>
+            </div>
+            <div class="navbar-collapse collapse" style="overflow: hidden;">
+	            <ul class="nav navbar-nav navbar-right">
+		            <li class="dropdown">
+		            @if (HttpContextAccessor.HttpContext.Session.GetInt32("account_id").HasValue)
+		            {
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> @HttpContextAccessor.HttpContext.Session.GetString("account_fullname") <span class="caret"></span></a>
+		            }
+		            else
+		            {
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Naudotojas <span class="caret"></span></a>
+		            }
+		            <ul class="dropdown-menu">
+						@if (HttpContextAccessor.HttpContext.Session.GetInt32("account_id").HasValue)
+						{
+							<li><a asp-area="" asp-controller="Account" asp-action="Logout"><span class="glyphicon glyphicon-log-out"></span> Atsijungti</a></li>
+						}
+						else
+						{
+							<li><a asp-area="" asp-controller="Account" asp-action="Login"><span class="glyphicon glyphicon-log-in"></span> Prisijungimas</a></li>
+							<li><a asp-area="" asp-controller="Account" asp-action="Register"><span class="glyphicon glyphicon-registration-mark"></span> Registracija</a></li>
+						}
+		            </ul>
+					</li>
+	            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="body-content" style="padding: 0">
+		<div class="container-fluid" style="padding: 0; margin: 30px 0;">
+			@RenderBody()
+		</div>
+	    <footer class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="container-fluid text-center" style="padding-top: 15px; color: beige;">
+				<span>&copy; 2017 - E.Coin Tracker</span>
+			</div>
+	    </footer>
+    </div>
+
+    <environment include="Development">
+        <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="text/javascript" src="~/lib/bootstrap-password/bootstrap-show-password.min.js"></script>
+        <script type="text/javascript" src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+	    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+	            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+	            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+	            crossorigin="anonymous"
+	            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    	</script>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-show-password/1.1.2/bootstrap-show-password.min.js"
+	            asp-fallback-src="~/lib/bootstrap-password/bootstrap-show-password.min.js"
+				asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.password"
+	            crossorigin="anonymous"
+	            integrity="sha256-Zn7YcIDEb0fAj5EA3vw0o7py0U8w11AXheKAI9lH2HM=">
+    	</script>
+
+	    <script type="text/javascript" src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

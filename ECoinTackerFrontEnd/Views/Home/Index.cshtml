@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ECoinTrackerModels.Models.CurrencyPairModel>
+@{
+    ViewData["Title"] = "Pradžia";
+}
+
+@foreach (var currencyPair in Model)
+{
+	<div class="col-md-3 col-xs-12">
+		<ul class="list-group">
+			<a asp-area="" asp-controller="Chart" asp-action="GetMonthChart" asp-route-symbolFrom="@currencyPair.SymbolFrom" asp-route-symbolTo="@currencyPair.SymbolTo">
+				<li class="list-group-item list-group-item-success">
+					@currencyPair.SymbolFrom / @currencyPair.SymbolTo @currencyPair.LastPrice
+				</li>
+			</a>
+		</ul>
+	</div>
+}

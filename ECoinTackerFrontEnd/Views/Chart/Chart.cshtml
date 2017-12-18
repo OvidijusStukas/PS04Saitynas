@@ -1,0 +1,84 @@
+﻿@using Newtonsoft.Json
+@model List<ECoinTrackerModels.Models.ChartModel>
+@{
+	ViewData["Title"] = ViewBag.Name;
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+	<h2>@ViewBag.Name</h2>
+</div>
+
+<div class="row text-center">
+	<div class="col-md-12 col-xs-12">
+		<div class="btn-group" role="group">
+			<a class="btn btn-default" asp-area="" asp-controller="Chart" asp-action="GetDayChart" asp-route-symbolFrom="@ViewBag.SymbolFrom" asp-route-symbolTo="@ViewBag.SymbolTo">Diena</a>
+			<a class="btn btn-default" asp-area="" asp-controller="Chart" asp-action="GetWeekChart" asp-route-symbolFrom="@ViewBag.SymbolFrom" asp-route-symbolTo="@ViewBag.SymbolTo">Savaitė</a>
+			<a class="btn btn-default" asp-area="" asp-controller="Chart" asp-action="GetMonthChart" asp-route-symbolFrom="@ViewBag.SymbolFrom" asp-route-symbolTo="@ViewBag.SymbolTo">Menesis</a>
+			</div>
+	</div>
+</div>
+
+
+<div class="container-fluid" style="position: relative; height:40vh; width:80vw">
+	<canvas id="chart"></canvas>
+</div>
+
+@section Scripts
+{
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg=" crossorigin="anonymous"></script>
+	
+	<script>
+		var jsonData = @Html.Raw(JsonConvert.SerializeObject(Model));
+
+		var data = [];
+
+		for (var i = 0; i < jsonData.length; i++) {
+			data.push({
+				x: new Date(jsonData[i].Timestamp * 1000),
+				y: jsonData[i].Price
+			});
+		}
+
+		var ctx = document.getElementById("chart").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				datasets: [{
+					label: "@ViewBag.Name",
+					backgroundColor: '#00FFFF',
+					borderColor: '#00FFFF',
+					fill: false,
+					data: data
+				}]
+			},
+			options: {
+				responsive: true,
+				scales: {
+					xAxes: [{
+						type: "time",
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Data'
+						},
+						ticks: {
+							major: {
+								fontStyle: "bold",
+								fontColor: "#FF0000"
+							}
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Kaina'
+						}
+					}]
+				}
+			}
+		});
+		
+	</script>
+}

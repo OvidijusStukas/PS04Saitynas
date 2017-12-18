@@ -1,0 +1,13 @@
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\bin\Debug\netcoreapp2.0\ECoinTackerFrontEnd.deps.json
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\bin\Debug\netcoreapp2.0\ECoinTackerFrontEnd.runtimeconfig.json
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\bin\Debug\netcoreapp2.0\ECoinTackerFrontEnd.runtimeconfig.dev.json
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\bin\Debug\netcoreapp2.0\ECoinTackerFrontEnd.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\bin\Debug\netcoreapp2.0\ECoinTackerFrontEnd.pdb
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\obj\Debug\netcoreapp2.0\ECoinTackerFrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\obj\Debug\netcoreapp2.0\ECoinTackerFrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\obj\Debug\netcoreapp2.0\ECoinTackerFrontEnd.AssemblyInfoInputs.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\obj\Debug\netcoreapp2.0\ECoinTackerFrontEnd.AssemblyInfo.cs
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\obj\Debug\netcoreapp2.0\ECoinTackerFrontEnd.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\obj\Debug\netcoreapp2.0\ECoinTackerFrontEnd.pdb
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\bin\Debug\netcoreapp2.0\ECoinTrackerModels.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTackerFrontEnd\bin\Debug\netcoreapp2.0\ECoinTrackerModels.pdb

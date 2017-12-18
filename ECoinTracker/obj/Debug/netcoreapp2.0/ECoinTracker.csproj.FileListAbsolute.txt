@@ -1,0 +1,13 @@
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\bin\Debug\netcoreapp2.0\ECoinTracker.deps.json
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\bin\Debug\netcoreapp2.0\ECoinTracker.runtimeconfig.json
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\bin\Debug\netcoreapp2.0\ECoinTracker.runtimeconfig.dev.json
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\bin\Debug\netcoreapp2.0\ECoinTracker.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\obj\Debug\netcoreapp2.0\ECoinTracker.csprojResolveAssemblyReference.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\obj\Debug\netcoreapp2.0\ECoinTracker.csproj.CoreCompileInputs.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\obj\Debug\netcoreapp2.0\ECoinTracker.AssemblyInfoInputs.cache
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\obj\Debug\netcoreapp2.0\ECoinTracker.AssemblyInfo.cs
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\bin\Debug\netcoreapp2.0\ECoinTracker.pdb
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\obj\Debug\netcoreapp2.0\ECoinTracker.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\obj\Debug\netcoreapp2.0\ECoinTracker.pdb
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\bin\Debug\netcoreapp2.0\ECoinTrackerModels.dll
+C:\Users\Diukas\Desktop\Trash\4th year\saitynas\projektas\back-end\ECoinTracker\ECoinTracker\bin\Debug\netcoreapp2.0\ECoinTrackerModels.pdb
